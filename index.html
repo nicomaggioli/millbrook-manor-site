@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Millbrook Manor — Lake George, New York</title>
+  <meta name="description" content="Millbrook Manor is a lakefront estate of 5 unique houses on Lake George, NY. Perfect for family vacations, reunions, and gatherings for up to 32 guests.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Millbrook <span>Manor</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="homes.html">Properties</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="nav__book" id="book-now-btn">Book Now</a>
+      <button class="nav__toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="homes.html">Properties</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" class="nav__book" style="margin-top:1rem" onclick="document.querySelector('.booking-modal').classList.add('open'); document.querySelector('.nav__mobile').classList.remove('open'); document.querySelector('.nav__toggle').classList.remove('open'); document.body.style.overflow='hidden'; return false;">Book Now</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg" style="background-image: url('images/frames/frame_001.jpg')"></div>
+    <canvas class="hero__canvas" id="hero-canvas"></canvas>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">A Lakefront Estate</p>
+      <h1 class="hero__title">Millbrook <em>Manor</em></h1>
+      <p class="hero__subtitle">Lake George, New York</p>
+    </div>
+    <div class="hero__scroll">
+      <span>Explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="sand">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Welcome</p>
+        <h2>Your Private Lakefront Retreat</h2>
+        <div class="accent-rule"></div>
+        <p>Five unique houses on the shores of Lake George. Perfect for family vacations, reunions, and gatherings accommodating up to 32 guests.</p>
+      </div>
+      <div class="amenities-strip reveal stagger">
+        <div class="amenity-item">
+          <div class="amenity-item__icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path d="M9 22V12h6v10"/></svg>
+          </div>
+          <span class="amenity-item__label">5 Houses</span>
+        </div>
+        <div class="amenity-item">
+          <div class="amenity-item__icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <span class="amenity-item__label">32 Guests</span>
+        </div>
+        <div class="amenity-item">
+          <div class="amenity-item__icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M14 9V5a3 3 0 00-6 0v4"/><rect x="2" y="9" width="20" height="13" rx="2"/></svg>
+          </div>
+          <span class="amenity-item__label">Private Beach</span>
+        </div>
+        <div class="amenity-item">
+          <div class="amenity-item__icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <span class="amenity-item__label">Lake Views</span>
+        </div>
+        <div class="amenity-item">
+          <div class="amenity-item__icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6 2 11c0 3 1.5 5.5 4 7v4l3.5-2c.8.2 1.6.3 2.5.3 5.52 0 10-4 10-9s-4.48-9-10-9z"/></svg>
+          </div>
+          <span class="amenity-item__label">Steel Docks</span>
+        </div>
+        <div class="amenity-item">
+          <div class="amenity-item__icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          </div>
+          <span class="amenity-item__label">Hot Tub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Properties Preview -->
+  <section>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Our Properties</p>
+        <h2>Five Unique Homes</h2>
+        <div class="accent-rule"></div>
+        <p>Each house has its own character, accommodations, and stunning lake views.</p>
+      </div>
+      <div class="properties-grid stagger">
+        <a href="house1.html" class="property-card reveal" style="--i:0">
+          <div class="property-card__image">
+            <img src="images/houses/house1.png" alt="Manhattan — House 1" loading="lazy">
+            <span class="property-card__badge">Direct Lakefront</span>
+          </div>
+          <div class="property-card__body">
+            <h3 class="property-card__name">Manhattan</h3>
+            <p class="property-card__subtitle">House One</p>
+            <div class="property-card__meta">
+              <span>3 Bed</span>
+              <span>3 Bath</span>
+              <span>Sleeps 6</span>
+            </div>
+            <p class="property-card__excerpt">Directly on Lake George with chef-inspired kitchen, sun deck, fire pit, pool table, and hot tub.</p>
+            <span class="property-card__link">View Property <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="house3.html" class="property-card reveal" style="--i:1">
+          <div class="property-card__image">
+            <img src="images/gallery/IMG_9017.png" alt="Queens — House 3" loading="lazy">
+            <span class="property-card__badge">Largest Home</span>
+          </div>
+          <div class="property-card__body">
+            <h3 class="property-card__name">Queens</h3>
+            <p class="property-card__subtitle">House Three</p>
+            <div class="property-card__meta">
+              <span>5 Bed</span>
+              <span>4 Bath</span>
+              <span>Sleeps 10</span>
+            </div>
+            <p class="property-card__excerpt">Three stories of spectacular lake views with open concept living, dual HVAC, and adjustable beds.</p>
+            <span class="property-card__link">View Property <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="house2.html" class="property-card reveal" style="--i:2">
+          <div class="property-card__image">
+            <img src="images/houses/House2.png" alt="Brooklyn — House 2" loading="lazy">
+            <span class="property-card__badge">Cottage</span>
+          </div>
+          <div class="property-card__body">
+            <h3 class="property-card__name">Brooklyn</h3>
+            <p class="property-card__subtitle">House Two</p>
+            <div class="property-card__meta">
+              <span>2 Bed + Loft</span>
+              <span>1 Bath</span>
+              <span>Sleeps 6</span>
+            </div>
+            <p class="property-card__excerpt">Beautiful lakefront cottage with private beach access, covered porch, and cozy loft sleeping.</p>
+            <span class="property-card__link">View Property <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="house4.html" class="property-card reveal" style="--i:3">
+          <div class="property-card__image">
+            <img src="images/houses/house4.png" alt="Bronx — House 4" loading="lazy">
+            <span class="property-card__badge">Cozy Retreat</span>
+          </div>
+          <div class="property-card__body">
+            <h3 class="property-card__name">Bronx</h3>
+            <p class="property-card__subtitle">House Four</p>
+            <div class="property-card__meta">
+              <span>1 Bed</span>
+              <span>1 Bath</span>
+              <span>Sleeps 4</span>
+            </div>
+            <p class="property-card__excerpt">Perfect for a small family or couples getaway with a private deck overlooking the lake.</p>
+            <span class="property-card__link">View Property <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+
+        <a href="house5.html" class="property-card reveal" style="--i:4">
+          <div class="property-card__image">
+            <img src="images/houses/House6.png" alt="Staten Island — House 5" loading="lazy">
+            <span class="property-card__badge">Vaulted Ceilings</span>
+          </div>
+          <div class="property-card__body">
+            <h3 class="property-card__name">Staten Island</h3>
+            <p class="property-card__subtitle">House Five</p>
+            <div class="property-card__meta">
+              <span>2 Bed</span>
+              <span>1 Bath</span>
+              <span>Sleeps 6</span>
+            </div>
+            <p class="property-card__excerpt">Vaulted ceilings, king and queen bedrooms, Murphy bed, and an adjoining deck with beautiful views.</p>
+            <span class="property-card__link">View Property <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="dark">
+    <div class="container">
+      <div class="featured-row">
+        <div class="featured-row__image reveal-left">
+          <img src="images/gallery/Overview.jpg" alt="Millbrook Manor property overview">
+        </div>
+        <div class="featured-row__text reveal-right">
+          <p class="eyebrow">Our Story</p>
+          <h3>A Family Tradition on the Queen of Lakes</h3>
+          <p>We are a family owned and run property since May of 2022. Our family has been vacationing in Lake George for many years and we are incredibly excited to share our small piece of heaven with you.</p>
+          <p>Since we are family run, we are committed to making your stay as comfortable as possible and strive to provide high quality service, care, and attention to all of our guests' needs.</p>
+          <a href="about.html" class="btn btn--outline">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <div class="cta-band">
+    <div class="cta-band__bg" style="background-image: url('images/houses/House1rooftop.png')"></div>
+    <div class="cta-band__content reveal">
+      <p class="eyebrow">Book Your Stay</p>
+      <h2>Ready for Your Lakefront Getaway?</h2>
+      <p>Contact us for pricing and availability. We'd love to host you at Millbrook Manor.</p>
+      <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Millbrook <span>Manor</span></div>
+          <p class="footer__desc">A lakefront estate of five unique houses on beautiful Lake George, New York. Family owned and operated since 2022.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Properties</h4>
+          <ul>
+            <li><a href="house1.html">Manhattan</a></li>
+            <li><a href="house2.html">Brooklyn</a></li>
+            <li><a href="house3.html">Queens</a></li>
+            <li><a href="house4.html">Bronx</a></li>
+            <li><a href="house5.html">Staten Island</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="homes.html">All Properties</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:millbrookmanorlg@gmail.com">millbrookmanorlg@gmail.com</a></li>
+            <li><a href="tel:5186685050">(518) 668-5050</a></li>
+            <li><a href="tel:5189563596">(518) 956-3596</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 Millbrook Manor. Congiusta Arms North LG, LLC.</span>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/millbrookmanorlg" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/millbrookmanorlg" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="built-by">Website built by <a href="https://nicomaggioli.com" target="_blank" rel="noopener">Nico Maggioli</a></div>
+
+
+  <!-- Booking Modal -->
+  <div class="booking-modal" id="booking-modal">
+    <div class="booking-modal__backdrop"></div>
+    <div class="booking-modal__panel">
+      <button class="booking-modal__close" aria-label="Close">&times;</button>
+      <div class="booking-modal__header">
+        <p class="eyebrow">Millbrook Manor</p>
+        <h2>Book Your Stay</h2>
+        <p>Fill out the form below and we'll get back to you with pricing and availability.</p>
+      </div>
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="book-name">Full Name</label>
+          <input type="text" id="book-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="book-email">Email Address</label>
+          <input type="email" id="book-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="book-phone">Phone Number</label>
+          <input type="tel" id="book-phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label>Which house(s) are you interested in?</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Full Estate (All 5)"> Full Estate</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Manhattan (House 1)"> Manhattan</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Brooklyn (House 2)"> Brooklyn</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Queens (House 3)"> Queens</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Bronx (House 4)"> Bronx</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Staten Island (House 5)"> Staten Island</label>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label for="book-checkin">Check-in</label>
+            <input type="date" id="book-checkin" name="checkin" required>
+          </div>
+          <div class="form-group">
+            <label for="book-checkout">Check-out</label>
+            <input type="date" id="book-checkout" name="checkout" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="book-guests">Number of Guests</label>
+          <input type="number" id="book-guests" name="guests" min="1" max="32">
+        </div>
+        <div class="form-group">
+          <label for="book-message">Message <span style="font-weight:300;color:var(--slate)">(optional)</span></label>
+          <textarea id="book-message" name="message" rows="3" placeholder="Any special requests or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Send Inquiry</button>
+        <p id="booking-success" style="display:none; text-align:center; margin-top:1rem; color:var(--gold-dim); font-size:0.85rem;">Your inquiry has been sent! We'll get back to you shortly.</p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

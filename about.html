@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Millbrook Manor</title>
+  <meta name="description" content="Learn about Millbrook Manor, a family-owned lakefront estate on Lake George, NY, operated by Holly and Frank Congiusta since 2022.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav nav--scrolled">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Millbrook <span>Manor</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="homes.html">Properties</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="nav__book" id="book-now-btn">Book Now</a>
+      <button class="nav__toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="homes.html">Properties</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+    <a href="#" class="nav__book" style="margin-top:1rem" onclick="document.querySelector('.booking-modal').classList.add('open'); document.querySelector('.nav__mobile').classList.remove('open'); document.querySelector('.nav__toggle').classList.remove('open'); document.body.style.overflow='hidden'; return false;">Book Now</a>
+  </div>
+
+  <!-- Page Hero -->
+  <div class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('images/gallery/IMG_3943.jpg')"></div>
+    <div class="page-hero__content">
+      <p class="eyebrow">Our Story</p>
+      <h1>About Millbrook Manor</h1>
+    </div>
+  </div>
+
+  <!-- About Content -->
+  <section>
+    <div class="container">
+      <div class="about-split">
+        <div class="about-split__text reveal">
+          <p>Welcome to Millbrook Manor Estate! The Estate consists of 5 individual houses on lakefront property in beautiful Lake George, New York. Each house has its own unique accommodations and special touch. The entire Estate is available for rent from May through September. It's perfect for family vacations, reunions, large gatherings and so much more! We have state-of-the-art steel docks that can be rented, as well as a small private beach. We are conveniently located right next to a larger public beach that has a lifeguard and playground. Stunning lake views are available from each and every house and of course, from the incredible roof-top deck. Enjoy amenities such as grills, gas fire pits, lounge chairs, pool table, hot tub, and more during your stay with us. The entire estate is suitable for up to 32 guests.</p>
+
+          <p>From October through April, 3 of the 5 houses are available to rent all together or separately. Our "off" season is anything but as the Lake George area offers amazing activities all year round! In the fall, enjoy leaf peeping season for some of the most vibrant fall foliage, or a hike up a local peak for a birds-eye view of the lake. In the winter, we are conveniently located near Gore and West mountains for skiing, snowboarding, and snow tubing. There is also the annual ice castle festival walking distance from the property in the Lake George Village. The spring is a beautiful time to stroll around the Village or Bolton Landing to the north.</p>
+
+          <p>We are a family owned and run property since May of 2022 when the Estate was purchased from Bud and Michelle Hochberg. Bud and Michelle lived on and maintained the property for many years and are the reason that it is as amazing as it is today. We are incredibly grateful for their hard work turning the Estate into the perfect get-away destination!</p>
+
+          <p>Our family has been vacationing in Lake George for many years and live just an hour to the south. We have three beautiful (almost all adult) children and are incredibly excited to share our small piece of heaven with you! Since we are family run, we are committed to making your stay as comfortable as possible and strive to provide high quality service, care, and attention to all of our guests' needs. Please do not hesitate to contact us for more information or special accommodations.</p>
+
+          <p>We hope you are able to make the trip to the Queen of Lakes and trust us with your stay!</p>
+
+          <div class="about-signature">
+            Holly and Frank Congiusta
+            <small>Congiusta Arms North LG, LLC</small>
+          </div>
+        </div>
+        <div class="about-split__image reveal-right">
+          <img src="images/gallery/image1.jpeg" alt="Millbrook Manor property view">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seasons -->
+  <section class="sand">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Year-Round</p>
+        <h2>Every Season at the Lake</h2>
+        <div class="accent-rule"></div>
+      </div>
+      <div class="featured-row reveal">
+        <div class="featured-row__image">
+          <img src="images/gallery/287702815_561177122142513_4173187643342786983_n.jpg" alt="Lake George seasons">
+        </div>
+        <div class="featured-row__text">
+          <h3>Summer — May to September</h3>
+          <p>All 5 houses available. Enjoy swimming, boating, and our private beach. The entire estate accommodates up to 32 guests for the perfect summer gathering.</p>
+          <h3 class="mt-3">Fall, Winter &amp; Spring</h3>
+          <p>3 houses available individually or together. Leaf peeping, skiing at Gore and West mountains, the annual ice castle festival, and peaceful strolls through Lake George Village and Bolton Landing.</p>
+          <a href="contact.html" class="btn btn--primary mt-2">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div class="cta-band__bg" style="background-image: url('images/houses/House1patio.png')"></div>
+    <div class="cta-band__content reveal">
+      <p class="eyebrow">Contact Us</p>
+      <h2>Plan Your Lake George Getaway</h2>
+      <p>Contact us via phone or email for pricing and special accommodations.</p>
+      <a href="contact.html" class="btn btn--primary">Get in Touch</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Millbrook <span>Manor</span></div>
+          <p class="footer__desc">A lakefront estate of five unique houses on beautiful Lake George, New York. Family owned and operated since 2022.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Properties</h4>
+          <ul>
+            <li><a href="house1.html">Manhattan</a></li>
+            <li><a href="house2.html">Brooklyn</a></li>
+            <li><a href="house3.html">Queens</a></li>
+            <li><a href="house4.html">Bronx</a></li>
+            <li><a href="house5.html">Staten Island</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="homes.html">All Properties</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:millbrookmanorlg@gmail.com">millbrookmanorlg@gmail.com</a></li>
+            <li><a href="tel:5186685050">(518) 668-5050</a></li>
+            <li><a href="tel:5189563596">(518) 956-3596</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 Millbrook Manor. Congiusta Arms North LG, LLC.</span>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/millbrookmanorlg" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/millbrookmanorlg" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="built-by">Website built by <a href="https://nicomaggioli.com" target="_blank" rel="noopener">Nico Maggioli</a></div>
+
+
+  <!-- Booking Modal -->
+  <div class="booking-modal" id="booking-modal">
+    <div class="booking-modal__backdrop"></div>
+    <div class="booking-modal__panel">
+      <button class="booking-modal__close" aria-label="Close">&times;</button>
+      <div class="booking-modal__header">
+        <p class="eyebrow">Millbrook Manor</p>
+        <h2>Book Your Stay</h2>
+        <p>Fill out the form below and we'll get back to you with pricing and availability.</p>
+      </div>
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="book-name">Full Name</label>
+          <input type="text" id="book-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="book-email">Email Address</label>
+          <input type="email" id="book-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="book-phone">Phone Number</label>
+          <input type="tel" id="book-phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label>Which house(s) are you interested in?</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Full Estate (All 5)"> Full Estate</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Manhattan (House 1)"> Manhattan</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Brooklyn (House 2)"> Brooklyn</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Queens (House 3)"> Queens</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Bronx (House 4)"> Bronx</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Staten Island (House 5)"> Staten Island</label>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label for="book-checkin">Check-in</label>
+            <input type="date" id="book-checkin" name="checkin" required>
+          </div>
+          <div class="form-group">
+            <label for="book-checkout">Check-out</label>
+            <input type="date" id="book-checkout" name="checkout" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="book-guests">Number of Guests</label>
+          <input type="number" id="book-guests" name="guests" min="1" max="32">
+        </div>
+        <div class="form-group">
+          <label for="book-message">Message <span style="font-weight:300;color:var(--slate)">(optional)</span></label>
+          <textarea id="book-message" name="message" rows="3" placeholder="Any special requests or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Send Inquiry</button>
+        <p id="booking-success" style="display:none; text-align:center; margin-top:1rem; color:var(--gold-dim); font-size:0.85rem;">Your inquiry has been sent! We'll get back to you shortly.</p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

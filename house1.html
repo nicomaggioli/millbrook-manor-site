@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manhattan — House One | Millbrook Manor</title>
+  <meta name="description" content="Manhattan is directly on Lake George with 3 bedrooms, 3 bathrooms, chef's kitchen, hot tub, and pool table. Sleeps 6.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="nav nav--scrolled">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Millbrook <span>Manor</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="homes.html" class="active">Properties</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" class="nav__book" id="book-now-btn">Book Now</a>
+      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="homes.html">Properties</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+    <a href="#" class="nav__book" style="margin-top:1rem" onclick="document.querySelector('.booking-modal').classList.add('open'); document.querySelector('.nav__mobile').classList.remove('open'); document.querySelector('.nav__toggle').classList.remove('open'); document.body.style.overflow='hidden'; return false;">Book Now</a>
+  </div>
+
+  <div class="page-hero">
+    <div class="page-hero__bg" style="background-image: url('images/houses/house1.png')"></div>
+    <div class="page-hero__content">
+      <p class="eyebrow">House One</p>
+      <h1>Manhattan</h1>
+      <p>Direct lakefront &middot; 3 Bed &middot; 3 Bath &middot; Sleeps 6</p>
+    </div>
+  </div>
+
+  <section class="house-detail">
+    <div class="container">
+      <a href="homes.html" class="back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        All Properties
+      </a>
+
+      <div class="house-detail__intro">
+        <div class="house-detail__intro-text reveal">
+          <p class="eyebrow">About This Home</p>
+          <h2>Manhattan</h2>
+          <p>Manhattan is directly on Lake George, this is the perfect house to catch the sun throughout the day. Manhattan has three bedrooms, three bathrooms, featuring a view from every window in this house, it sleeps 6 and has central air and heat.</p>
+          <p>Manhattan features a sun deck with a dining table, a large sofa, a fire pit, multiple chaise lounges, and multiple large adjustable sun umbrellas. The main floor features a chef-inspired kitchen, equipped with a double oven, gas stove, and a sub-zero refrigerator, this kitchen is every chef's dream.</p>
+          <p>The master suite is where you will wake up every morning to spectacular views in the king bed, looking at the lake. The fully custom master suite includes a walk-in closet that flows into the bath with double vanities, a washer and dryer, and a walk-in shower.</p>
+          <p>The lower floor is equipped with two queen bedrooms with one featuring an ensuite bathroom. Also on the lower level is a second bathroom. Take in the beautiful views of Lake George while playing a game of pool or enjoying the outdoor hot tub. Just off the lower level is a patio that features comfortable seating for both dining and relaxing.</p>
+
+          <div class="house-stats mt-3">
+            <div class="house-stat">
+              <div class="house-stat__number">3</div>
+              <div class="house-stat__label">Bedrooms</div>
+            </div>
+            <div class="house-stat">
+              <div class="house-stat__number">3</div>
+              <div class="house-stat__label">Bathrooms</div>
+            </div>
+            <div class="house-stat">
+              <div class="house-stat__number">6</div>
+              <div class="house-stat__label">Guests</div>
+            </div>
+          </div>
+
+          <div class="amenities-grid">
+            <div class="amenity-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg> Sun Deck &amp; Fire Pit</div>
+            <div class="amenity-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg> Chef's Kitchen</div>
+            <div class="amenity-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l2 0 0 16 16 0 0-16 2 0"/><path d="M8 8h8v4H8z"/></svg> King Master Suite</div>
+            <div class="amenity-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Pool Table &amp; Hot Tub</div>
+            <div class="amenity-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> Central Air &amp; Heat</div>
+            <div class="amenity-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="6" width="22" height="12" rx="2"/><path d="M6 12h.01M18 12h.01"/></svg> Washer &amp; Dryer</div>
+          </div>
+
+          <div class="rental-note">
+            Rentals for one-three houses with group pricing available upon request. Winter packages available for January-April including discounts for extended stay. Contact owner for special pricing.
+          </div>
+        </div>
+        <div class="house-detail__intro-image reveal-right">
+          <img src="images/houses/House1patio.png" alt="Manhattan patio area">
+        </div>
+      </div>
+
+      <!-- Photo Gallery -->
+      <div class="section-header reveal">
+        <p class="eyebrow">Gallery</p>
+        <h2>Explore Manhattan</h2>
+        <div class="accent-rule"></div>
+      </div>
+      <div class="photo-gallery reveal">
+        <div class="photo-gallery__item"><img src="images/thumbs/House1rooftop_thumb.jpg" data-full="images/houses/House1rooftop.png" alt="Rooftop deck" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9067_thumb.jpg" data-full="images/gallery/IMG_9067.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9068_thumb.jpg" data-full="images/gallery/IMG_9068.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9069_thumb.jpg" data-full="images/gallery/IMG_9069.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9070_thumb.jpg" data-full="images/gallery/IMG_9070.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9072_thumb.jpg" data-full="images/gallery/IMG_9072.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9073_thumb.jpg" data-full="images/gallery/IMG_9073.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9074_thumb.jpg" data-full="images/gallery/IMG_9074.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9075_thumb.jpg" data-full="images/gallery/IMG_9075.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9076_thumb.jpg" data-full="images/gallery/IMG_9076.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9077_thumb.jpg" data-full="images/gallery/IMG_9077.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9081_thumb.jpg" data-full="images/gallery/IMG_9081.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9082_thumb.jpg" data-full="images/gallery/IMG_9082.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9083_thumb.jpg" data-full="images/gallery/IMG_9083.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9084_thumb.jpg" data-full="images/gallery/IMG_9084.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9086_thumb.jpg" data-full="images/gallery/IMG_9086.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9087_thumb.jpg" data-full="images/gallery/IMG_9087.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9088_thumb.jpg" data-full="images/gallery/IMG_9088.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9089_thumb.jpg" data-full="images/gallery/IMG_9089.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9091_thumb.jpg" data-full="images/gallery/IMG_9091.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9092_thumb.jpg" data-full="images/gallery/IMG_9092.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9094_thumb.jpg" data-full="images/gallery/IMG_9094.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9096_thumb.jpg" data-full="images/gallery/IMG_9096.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9097_thumb.jpg" data-full="images/gallery/IMG_9097.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9098_thumb.jpg" data-full="images/gallery/IMG_9098.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9105_thumb.jpg" data-full="images/gallery/IMG_9105.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9106_thumb.jpg" data-full="images/gallery/IMG_9106.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9107_thumb.jpg" data-full="images/gallery/IMG_9107.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/IMG_9111_thumb.jpg" data-full="images/gallery/IMG_9111.png" alt="Manhattan interior" loading="lazy"></div>
+        <div class="photo-gallery__item"><img src="images/thumbs/87303564_110744997185730_7662840376167759872_n_thumb.jpg" data-full="images/gallery/87303564_110744997185730_7662840376167759872_n.jpg" alt="Manhattan" loading="lazy"></div>
+      </div>
+
+      <!-- Next/Prev -->
+      <div class="property-nav">
+        <a href="house5.html">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          <div>Previous<span class="property-nav__name">Staten Island</span></div>
+        </a>
+        <a href="house2.html">
+          <div style="text-align:right">Next<span class="property-nav__name">Brooklyn</span></div>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="Gallery image">
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Millbrook <span>Manor</span></div>
+          <p class="footer__desc">A lakefront estate of five unique houses on beautiful Lake George, New York.</p>
+        </div>
+        <div class="footer__col"><h4>Properties</h4><ul><li><a href="house1.html">Manhattan</a></li><li><a href="house2.html">Brooklyn</a></li><li><a href="house3.html">Queens</a></li><li><a href="house4.html">Bronx</a></li><li><a href="house5.html">Staten Island</a></li></ul></div>
+        <div class="footer__col"><h4>Explore</h4><ul><li><a href="about.html">About Us</a></li><li><a href="homes.html">All Properties</a></li><li><a href="gallery.html">Photo Gallery</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="footer__col"><h4>Contact</h4><ul><li><a href="mailto:millbrookmanorlg@gmail.com">millbrookmanorlg@gmail.com</a></li><li><a href="tel:5186685050">(518) 668-5050</a></li><li><a href="tel:5189563596">(518) 956-3596</a></li></ul></div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 Millbrook Manor. Congiusta Arms North LG, LLC.</span>
+        <div class="footer__social">
+          <a href="https://www.facebook.com/millbrookmanorlg" target="_blank" rel="noopener" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/millbrookmanorlg" target="_blank" rel="noopener" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="built-by">Website built by <a href="https://nicomaggioli.com" target="_blank" rel="noopener">Nico Maggioli</a></div>
+
+
+  <!-- Booking Modal -->
+  <div class="booking-modal" id="booking-modal">
+    <div class="booking-modal__backdrop"></div>
+    <div class="booking-modal__panel">
+      <button class="booking-modal__close" aria-label="Close">&times;</button>
+      <div class="booking-modal__header">
+        <p class="eyebrow">Millbrook Manor</p>
+        <h2>Book Your Stay</h2>
+        <p>Fill out the form below and we'll get back to you with pricing and availability.</p>
+      </div>
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="book-name">Full Name</label>
+          <input type="text" id="book-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="book-email">Email Address</label>
+          <input type="email" id="book-email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="book-phone">Phone Number</label>
+          <input type="tel" id="book-phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label>Which house(s) are you interested in?</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Full Estate (All 5)"> Full Estate</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Manhattan (House 1)"> Manhattan</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Brooklyn (House 2)"> Brooklyn</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Queens (House 3)"> Queens</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Bronx (House 4)"> Bronx</label>
+            <label class="checkbox-label"><input type="checkbox" name="book-houses" value="Staten Island (House 5)"> Staten Island</label>
+          </div>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label for="book-checkin">Check-in</label>
+            <input type="date" id="book-checkin" name="checkin" required>
+          </div>
+          <div class="form-group">
+            <label for="book-checkout">Check-out</label>
+            <input type="date" id="book-checkout" name="checkout" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="book-guests">Number of Guests</label>
+          <input type="number" id="book-guests" name="guests" min="1" max="32">
+        </div>
+        <div class="form-group">
+          <label for="book-message">Message <span style="font-weight:300;color:var(--slate)">(optional)</span></label>
+          <textarea id="book-message" name="message" rows="3" placeholder="Any special requests or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Send Inquiry</button>
+        <p id="booking-success" style="display:none; text-align:center; margin-top:1rem; color:var(--gold-dim); font-size:0.85rem;">Your inquiry has been sent! We'll get back to you shortly.</p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
